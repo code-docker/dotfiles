@@ -27,13 +27,19 @@ main() {
   prompt_setup
   source_my_zshrc
   post_hacks
+  set_java_home
   cd ~
+}
+
+set_java_home(){
+  export NVD_API_KEY="1d5b25c0-9832-401b-ab22-04607bab9257"
+  export JAVA_HOME=`/usr/libexec/java_home -v 17`; java -version
 }
 
 
 zsh_opts_vars() {
   #  Increase history size
-  ## See http://zsh.sourceforge.net/Guide/zshguide02.html#l16
+  ## See http://zsh.sourceforge.net/Guide/zshguide02.html#l16:
   if [ -z "$HISTFILE" ]; then
     HISTFILE=$HOME/.zhistory
   fi
@@ -292,3 +298,4 @@ misc_alias() {
 main
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+#export PATH="/opt/homebrew/opt/swift/bin:$PATH"
