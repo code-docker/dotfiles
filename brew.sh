@@ -94,6 +94,10 @@ brew install lazygit \
 gh \
 diff-so-fancy # once this is installed git should be configured to use diff-so-fancy instead of vanilla diff.
 
+# directory browser
+# -----------------------------------------
+brew install superfile
+
 # fonts
 # ------------------------------------------
 
