@@ -175,7 +175,6 @@ defenv_golang() {
       export PATH
     fi
   fi
-  export GODEBUG=x509sha1=1
 }
 
 defenv_android() {
