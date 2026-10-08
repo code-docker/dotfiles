@@ -41,7 +41,7 @@ zsh_opts_vars() {
   #  Increase history size
   ## See http://zsh.sourceforge.net/Guide/zshguide02.html#l16:
   if [ -z "$HISTFILE" ]; then
-    HISTFILE=$HOME/.zhistory
+    HISTFILE=$HOME/.zsh_history
   fi
   export HISTFILESIZE=10000000
   export SAVEHIST=1000000
